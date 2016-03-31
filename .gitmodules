@@ -1,0 +1,19 @@
+[submodule "fcc-edm"]
+    path = fcc-edm
+    url = git@github.com:semkiv/fcc-edm.git
+
+[submodule "fcc-generator"]
+    path = generator
+    url = git@github.com:semkiv/fcc-generator.git
+
+[submodule "heppy"]
+    path = heppy
+    url = git@github.com:semkiv/heppy.git
+
+[submodule "heppy_fcc"]
+    path = heppy_fcc
+    url = git@github.com:semkiv/heppy_fcc.git
+
+[submodule "reconstruction"]
+    path = reconstruction
+    url = git@github.com:semkiv/fcc-reconstruction.git
