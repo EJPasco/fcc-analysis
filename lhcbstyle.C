@@ -2,9 +2,9 @@
 ////////////////////////////////////////////////////////////////////
 // PURPOSE:
 //
-// This macro defines a reasonable style for (black-and-white) 
-// "publication quality" ROOT plots. The default settings contain 
-// many features that are either not desirable for printing on white 
+// This macro defines a reasonable style for (black-and-white)
+// "publication quality" ROOT plots. The default settings contain
+// many features that are either not desirable for printing on white
 // paper or impair the general readibility of plots.
 //
 // USAGE:
@@ -21,27 +21,27 @@
 // In particular there is no box with statistics or fit information.
 // You can easily change this either by editing your private copy
 // of this style file or by calls to "gStyle" in your macro.
-// For example, 
+// For example,
 //   gStyle->SetOptFit(1011);
 // will add some fit information.
 //
 // Font:
-// 
+//
 // The font is chosen to be 62, i.e.helvetica-bold-r-normal with
 // precision 2. Font is of course a matter of taste, but most people
 // will probably agree that Helvetica bold gives close to optimal
-// readibility in presentations. It appears to be the ROOT default, 
-// and since there are still some features in ROOT that simply won't 
-// respond to any font requests, it is the wise choice to avoid 
+// readibility in presentations. It appears to be the ROOT default,
+// and since there are still some features in ROOT that simply won't
+// respond to any font requests, it is the wise choice to avoid
 // ugly font mixtures on the same plot... The precision of the font (2)
 // is chosen in order to have a rotatable and scalable font. Be sure
 // to use true-type fonts! I.e.
-// Unix.*.Root.UseTTFonts: true  in your .rootrc file. 
+// Unix.*.Root.UseTTFonts: true  in your .rootrc file.
 //
 // "Landscape histograms":
 //
 // The style here is designed for more or less quadratic plots.
-// For very long histograms, adjustements are needed. For instance, 
+// For very long histograms, adjustements are needed. For instance,
 // for a canvas with 1x5 histograms:
 //  TCanvas* c1 = new TCanvas("c1", "L0 muons", 600, 800);
 //  c1->Divide(1,5);
@@ -66,7 +66,7 @@ cout << "                         $$$$$  $   $   $$$   $$$  " << endl;
 cout << " " << endl;
 cout << "                           LHCb ROOT style file " << endl;
 cout << " " << endl;
-cout << 
+cout <<
 "     Problems, suggestions, contributions to Thomas.Schietinger@cern.ch" << endl;
 cout << " " << endl;*/
 
@@ -126,7 +126,7 @@ lhcbStyle->SetMarkerSize(1.2);
 lhcbStyle->SetLabelOffset(0.015);
 
 // by default, do not display histogram decorations:
-lhcbStyle->SetOptStat(0);  
+lhcbStyle->SetOptStat(0);
 lhcbStyle->SetOptStat(1110);  // show only nent, mean, rms
 lhcbStyle->SetOptTitle(0);
 lhcbStyle->SetOptFit(1011);
@@ -169,8 +169,4 @@ lhcbLatex->SetTextAlign(12);
 
 gROOT->SetStyle("lhcbStyle");
 gROOT->ForceStyle();
-
-
-
 }
-
